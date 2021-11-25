@@ -35,7 +35,7 @@ jsNinja();
 */
 
 //CODE HERE
-const printName = name => console.log(name)
+const printName = name => console.log(name);
 printName("Zak");
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -50,7 +50,7 @@ printName("Zak");
 */
 
 //CODE HERE
-const greeting = name => console.log(`Hello, ${String(name)}`)
+const greeting = name => console.log(`Hello, ${String(name)}`);
 greeting("Zak");
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -65,7 +65,7 @@ greeting("Zak");
 */
 
 //CODE HERE
-const compareNums = (num1, num2) => (num1 >= num2) ? num1 : num2
+const compareNums = (num1, num2) => (num1 >= num2) ? num1 : num2;
 console.log(compareNums(9.2,5));
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -77,7 +77,9 @@ console.log(compareNums(9.2,5));
 */
 
 //CODE HERE
-
+const add = (num1, num2) => Number(num1) + Number(num2);
+const sum = add("43", "12");
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -92,7 +94,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+// expression ---- Correct
 
 
 
@@ -103,22 +105,23 @@ const exclaim = function(str) {
   Uncomment the answer underneath.
 */
 
-const exclaimTwo = str => {
-  return str.toUpperCase() + '!!!'
-}
+// const exclaimTwo = str => {
+//   return str.toUpperCase() + '!!!'
+// }
 
-// arrow
+// arrow ---- Correct
 // declaration
 // expression
 
 /*
-  Rewrite exclaimTwo to be a single line.
-  Call your new function exclaimThree
+Rewrite exclaimTwo to be a single line.
+Call your new function exclaimThree
 
-  Brownie points if you use a template string
+Brownie points if you use a template string
 */
 
-
+const exclaimTwo = str => `${str.toUpperCase()}!!!`
+console.log(exclaimTwo("Hello"));
 
 ////////////////// PROBLEM 9 ////////////////////
 
