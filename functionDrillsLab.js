@@ -65,7 +65,8 @@ greeting("Zak");
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => (num1 >= num2) ? num1 : num2
+console.log(compareNums(9.2,5));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
