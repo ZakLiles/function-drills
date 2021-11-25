@@ -25,6 +25,7 @@ helloWorld();
 
 //CODE HERE
 const jsNinja = () => "I am a JavaScript ninja!";
+jsNinja();
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -49,7 +50,8 @@ printName("Zak");
 */
 
 //CODE HERE
-
+const greeting = name => console.log(`Hello, ${String(name)}`)
+greeting("Zak");
 
 ////////////////// PROBLEM 5 ////////////////////
 
