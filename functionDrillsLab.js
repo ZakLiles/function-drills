@@ -149,7 +149,20 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+const nameCheck = name => {
+  switch(name){
+    case 'Steven':
+      return 'What is up Steven?'
+      break
+    case 'Bryan':
+      return 'Hey Bryan!'
+      break
+    default:
+      return `Cool name, ${name}`
+  }
+}
+const nameGreeting = nameCheck("Bryan")
+console.log(nameGreeting);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -162,7 +175,23 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
-
+const faveColorFinder = color => {
+  switch(color){
+    case 'red':
+      return 'red is a great color'
+      break
+    case 'green':
+      return 'green is a solid favorite color'
+      break
+    case 'black':
+      return 'so trendy'
+      break
+    default:
+      return `you need to evaluate your favorite color choice`
+  }
+}
+const colorRating = faveColorFinder("blue")
+console.log(colorRating);
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
