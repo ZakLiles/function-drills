@@ -277,6 +277,7 @@ const theEliminator = (contestants, loser) => {
   return contestants
 }
 console.log(theEliminator(contestants,loser));
+
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = "Hi, my name is Kylo."
 /*
@@ -285,7 +286,8 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+const logUpperCase = string => console.log(string.toUpperCase());
+logUpperCase(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
