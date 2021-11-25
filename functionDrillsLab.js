@@ -34,7 +34,8 @@ const jsNinja = () => "I am a JavaScript ninja!";
 */
 
 //CODE HERE
-
+const printName = name => console.log(name)
+printName("Zak");
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
