@@ -218,7 +218,9 @@ printAllNames(namesArr);
 */
 
 //CODE HERE
-
+const thatsOdd = num => (num % 2 === 0) ? "That's not odd!" : "That is odd indeed!";
+const oddChecker = thatsOdd(52);
+console.log(oddChecker);
 
 ////////////////// PROBLEM 14 ////////////////////
 
