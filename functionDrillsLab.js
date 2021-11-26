@@ -94,7 +94,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression ---- Correct
+expression
 
 
 
@@ -109,7 +109,7 @@ const exclaim = function(str) {
 //   return str.toUpperCase() + '!!!'
 // }
 
-// arrow ---- Correct
+arrow
 // declaration
 // expression
 
@@ -135,7 +135,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration ----Correct
+declaration 
 // expression
 
 
@@ -304,6 +304,7 @@ const emailCheck = email => {
   return ( emailString.includes('@') ) ? 'email verified' : 'must provide a valid email address';
 }
 console.log(emailCheck("first.lastgoogle.com"));
+
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
@@ -311,15 +312,18 @@ console.log(emailCheck("first.lastgoogle.com"));
 */
 
 //CODE HERE
-
-
+const buyChocolateFrogs = gold => gold/3;
+totalFrogs = buyChocolateFrogs(31);
+console.log(totalFrogs);
 ////////////////// PROBLEM 20 ////////////////////
 /*
   You might have noticed a slight bug in the previous problem. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in the previous problem (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
 //CODE HERE
-
+const buyChocolateFrogs2 = gold => Math.floor(gold/3);
+totalFrogs2 = buyChocolateFrogs2(22);
+console.log(totalFrogs2);
 
 ////////////////// PROBLEM 21 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
@@ -328,8 +332,18 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
-
-
+const ascendingOrder = arr => {
+  ascOrder = true;
+    for( i = 1; i < arr.length; i++){
+      if(arr[i]<arr[i-1]){
+        ascOrder = false;
+        break;
+      }
+    }
+  return ascOrder;
+}
+const arrayIsAscending = ascendingOrder(sampleArray);
+console.log(arrayIsAscending)
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
@@ -352,13 +366,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ["duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ["duck","rubberDuck"]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ["duck","rubberDuck","sailorDuck"]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ["duck","realDuck"]
